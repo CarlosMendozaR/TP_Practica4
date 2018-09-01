@@ -26,21 +26,22 @@ namespace Sobrecarga
         public Calc(string marca, string color)
         {
             this.marca = marca;
-            Console.WriteLine("La marca es {0}  y de color {1}", this.marca, this.color);
+            this.color = color;
+            Console.WriteLine("La marca es {0}  y de color {1}", marca, color);
         }
         public Calc(string funciones, int precio)
         {
             this.funciones = funciones;
             this.precio = precio;
-            Console.WriteLine("la versión básica de {0} como funciones y cuesta ${1} pesos",this.funciones, this.precio);
+            Console.WriteLine("la versión básica de {0} como funciones y cuesta ${1} pesos",funciones, precio);
 
         }
         public Calc(int teclas)
         {
-            this.precio = 600;
+            precio = 600;
             this.teclas = teclas;
 
-            Console.WriteLine("La version de {0} teclas extra cuesta ${1} extra", this.teclas, this.precio);
+            Console.WriteLine("La version de {0} teclas extra cuesta ${1} extra", teclas, precio);
         }
         #endregion
     }

@@ -11,9 +11,9 @@ namespace Sobrecarga
             string color = Console.ReadLine();
             Console.WriteLine("Ingrese la marca de su preferencia");
             string marca = Console.ReadLine();
-            Calc Micalc = new Calc(marca,color);
+            Calc Micalc = new Calc(marca, color);
             Calc LaCalc = new Calc();
-            Console.WriteLine("Cuantas teclas extras quiere agragar");
+            Console.WriteLine("Cuantas teclas extras quiere agregar");
             int teclas = int.Parse(Console.ReadLine());
 
             Calc Mcalc = new Calc(teclas);
@@ -22,8 +22,13 @@ namespace Sobrecarga
             #endregion
             #region ACTIVIDAD 2
             Console.WriteLine("**Todos los números en base 10**");
-            Console.WriteLine("Ingresa el exponente al que deseas elevar tres números");
+            Console.WriteLine("Ingresa el exponente al que deseas elevar tres números (exclusivamente del 1-5 por ser una demostracion)");
             byte exp = byte.Parse(Console.ReadLine());
+            if (exp < 1 || exp > 5)
+            {
+                Console.WriteLine("No es correcto, se hara la demostracion con exponente = 5");
+                exp = 5;
+            }
 
             NCientifica n1 = new NCientifica(3, 7);
             NCientifica n2 = new NCientifica(32, -1);
@@ -46,6 +51,7 @@ namespace Sobrecarga
             Console.WriteLine("{0} ^ {1} = {2}", n8, exp, n0);
             #endregion
 
+            Console.ReadLine();
 
         }
     }
