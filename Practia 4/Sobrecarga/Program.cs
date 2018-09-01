@@ -5,7 +5,21 @@ namespace Sobrecarga
     class Program
     {
         static void Main()
-        {
+        { //Conoceremos una calculadora y se dara una demostración//
+            #region Actividad 1 
+            Console.WriteLine("Ingrese el color de su calculadora");
+            string color = Console.ReadLine();
+            Console.WriteLine("Ingrese la marca de su preferencia");
+            string marca = Console.ReadLine();
+            Calc Micalc = new Calc(marca,color);
+            Calc LaCalc = new Calc();
+            Console.WriteLine("Cuantas teclas extras quiere agragar");
+            int teclas = int.Parse(Console.ReadLine());
+
+            Calc Mcalc = new Calc(teclas);
+
+            Console.WriteLine("Ahora una demostración de el manejo de potencias");
+            #endregion
             #region ACTIVIDAD 2
             Console.WriteLine("**Todos los números en base 10**");
             Console.WriteLine("Ingresa el exponente al que deseas elevar tres números");
