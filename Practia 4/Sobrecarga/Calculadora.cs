@@ -16,7 +16,7 @@ namespace Sobrecarga
         #region Constructor
         public Calc()
         {
-            precio = 600;
+            precio = 500;
             funciones = "Calculo, Potencias y Algebra";
             Console.WriteLine("Todas las calculadoras cuestan {0} y tienen funciones de {1}",precio,funciones);
 
